@@ -1,20 +1,21 @@
-// Ejecutar: npm install request --save
-var requests = require("request");
+// Ejecutar: npm install axios --save
+const axios = require('axios').default;
 
-var options = { 
-     method: 'POST',
-     url: 'https://www.onurix.com/api/v1/url/short-statistic',
-     headers: { 'content-type': 'application/x-www-form-urlencoded'},
-     formData: {
-          key:'AQUI_SU_KEY',
-          client:'AQUI_SU_CLIENT',
-          'name-url':'AQUI_NOMBE_DE_URL',
-          since:'Fecha inicial YYYY-MM-DD',
-          until:'Fecha final YYYY-MM-DD'
-     }
+let headers = {headers:
+     { 'content-type': 'application/x-www-form-urlencoded'}
 };
 
-var test = requests(options, function (error, response, body) {
-     if (error) throw new Error(error);
-          console.log(body);
-});
+let data ={
+     'client':'AQUI_SU_CLIENT',
+     'key':'AQUI_SU_KEY',
+     'name-url':'AQUI_NOMBRE_DE_URL',
+     'since':'Fecha inicial YYYY-MM-DD',
+     'until':'Fecha final YYYY-MM-DD'
+}
+
+axios.post('https://www.onurix.com/api/v1/url/short-statistic',data,headers)
+          .then(resp=>{
+               console.log(resp.data);
+          }).catch(error=>{
+               console.log(error);
+          });
