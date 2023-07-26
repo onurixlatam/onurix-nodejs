@@ -6,15 +6,15 @@ let headers={
      }
 }
 let data = {
-    'client':'3',
-    'key':'a3f3f9ea627d496c57e2cd354bb55280354b5be26491dcc974e18',
-    'id':'11',
-    'name':'test test',
-    'lastname':'desde nodejs',
-    'phone': '3209345417',
-    'email':'laps1308+21@gmail.com'
+     'client':'AQUI_SU_CLIENT',
+     'key':'AQUI_SU_KEY',
+     'id':'AQUI_ID_CONTACTO',
+     'name':'AQUI_EL_NOMBRE_DE_CONTACTO',
+     'lastname':'AQUI_EL_APELLIDO_DE_CONTACTO',
+     'phone': 'AQUI_TELEFONO_DE_CONTACTO',
+     'email':'AQUI_EMAIL_DE_CONTACTO'
 };
-axios.post('http://localhost:7474/api/v1/contacts/update',data,headers)
+axios.post('https://www.onurix.com/api/v1/contacts/update',data,headers)
           .then(resp=>{
                console.log(resp.data);
           }).catch(error=>{
