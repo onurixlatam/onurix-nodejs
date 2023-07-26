@@ -11,7 +11,7 @@ let data = {
     'id':'AQUI_EL_NOMBRE_DE_GRUPO',
     'name':'AQUI_EL_NOMBRE_DE_GRUPO',
 };
-axios.post('http://localhost:7474/api/v1/group/update',data,headers)
+axios.post('https://www.onurix.com/api/v1/group/update',data,headers)
           .then(resp=>{
                console.log(resp.data);
           }).catch(error=>{
