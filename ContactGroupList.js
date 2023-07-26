@@ -5,7 +5,7 @@ let headers={
           'content-type': 'application/x-www-form-urlencoded',
      }
 }
-axios.get('http://192.168.96.1:7474/api/v1/group/4/contacts/list?key=a3f3f9ea627d496c57e2cd354bb55280354b5be26491dcc974e18&client=3',headers)
+axios.get('https://www.onurix.com/api/v1/group/AQUI_ID_GRUPO/contacts/list?key=AQUI_SU_KEY&client=AQUI_SU_ID',headers)
           .then(resp=>{
                console.log(resp.data);
           }).catch(error=>{
