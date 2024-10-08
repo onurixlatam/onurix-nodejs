@@ -6,13 +6,7 @@ var options = {
   'headers': {
     'Content-Type': 'application/json'
   },
-//   body: JSON.stringify({
-//      "phone": "+573201234567",
-//      "body": [
-//        "Parametro1",
-//        "Parametro2"
-//      ]
-//    })
+  
   body: JSON.stringify('AQUI_EL_JSON_CON_LOS_VALORES_PARA_LA_PLANTILLA')
 
 };
