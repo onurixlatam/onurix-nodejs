@@ -86,6 +86,7 @@ A continuación, se detalla cada endpoint de ejemplo y el método HTTP que utili
 | :------------------------ | :------------ | :-------------------------------------------------------------- |
 | `SendWhatsApp2FA.js`     | `POST (JSON)` | Envía un mensaje de WhatsApp con un código de verificación 2FA. |
 | `WhatsAppGeneralSend.js` | `POST (JSON)` | Envía un mensaje de WhatsApp usando una plantilla.              |
+| `SendWhatsAppWithoutTemplate.js` | `POST (JSON)` | Envía un mensaje de WhatsApp sin usar una plantilla. |
 
 ## 📖 Uso
 
@@ -141,7 +142,9 @@ Para usar los ejemplos, necesitas reemplazar los valores de los placeholders (`A
 | **Llamadas** | `audio-code` | ID de un audio previamente cargado en la plataforma.                        |
 | **URL**      | `url-long`   | La URL original que deseas acortar.                                         |
 | **URL**      | `alias`      | (Opcional) Alias personalizado para la URL corta.                           |
+| **WhatsApp** | `from_phone_meta_id` | ID del número de teléfono de origen en la plataforma de Meta.       |
 | **WhatsApp** | `templateId` | ID de la plantilla de WhatsApp aprobada por Meta.                           |
+| **WhatsApp** | `message`    | Un objeto JSON con el tipo y valor del mensaje a enviar.                   |
 | **WhatsApp** | `data`       | Un objeto JavaScript que se convertirá a JSON con los valores para la plantilla. |
 
 ### Ejemplo de parámetros para `SMS/SendSMS.js`
