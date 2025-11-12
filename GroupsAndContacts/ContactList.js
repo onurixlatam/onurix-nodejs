@@ -5,7 +5,7 @@ let headers={
           'content-type': 'application/x-www-form-urlencoded',
      }
 }
-axios.get('https://www.onurix.com/api/v1/group/AQUI_ID_GRUPO/contacts/list?key=AQUI_SU_KEY&client=AQUI_SU_ID&page=AQUI_NUMERO_PAGINA',headers)
+axios.get('https://www.onurix.com/api/v1/contacts/list?key=AQUI_SU_KEY&client=AQUI_SU_ID&page=AQUI_NUMERO_PAGINA',headers)
           .then(resp=>{
                console.log(resp.data);
           }).catch(error=>{
