@@ -13,7 +13,7 @@ let headers = {headers:
 //    })
  let data= JSON.stringify('AQUI_EL_JSON_CON_LOS_VALORES_PARA_LA_PLANTILLA')
 
-axios.post('https://www.onurix.com/api/v1/whatsapp/send?key=AQUI_SU_KEY&client=AQUI_SU_CLIENT&templateId=AQUI_EL_ID_DE_LA_PLANTILLA',data,headers)
+axios.post('https://www.onurix.com/api/v1/whatsapp/send?key=AQUI_SU_KEY&client=AQUI_SU_CLIENT&template_id=AQUI_EL_ID_DE_LA_PLANTILLA&phone_sender_id=AQUI_EL_ID_DEL_NUMERO_DE_TELEFONO_REMITENTE',data,headers)
           .then(resp=>{
                console.log(resp.data);
           }).catch(error=>{
