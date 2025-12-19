@@ -1,7 +1,7 @@
 // Run: npm install axios --save
 const axios = require('axios').default;
 
-const url = 'https://www.onurix.com/api/v1/whatsapp/send_without_template?key=AQUI_SU_SECRET_KEY&client=AQUI_SU_CLIENT_ID&phone_sender_id=AQUI_EL_ID_DEL_NUMERO_DE_TELEFONO_REMITENTE';
+const url = 'https://www.onurix.com/api/v1/whatsapp/send_without_template?key=AQUI_SU_SECRET_KEY&client=AQUI_SU_CLIENT_ID&phone-sender-id=AQUI_EL_ID_DEL_NUMERO_DE_TELEFONO_REMITENTE';
 
 const data = {
     "from_phone_meta_id": "AQUI_EL_META_ID_DEL_TELEFONO",
